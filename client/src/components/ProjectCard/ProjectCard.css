@@ -1,0 +1,41 @@
+.projects-heading {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.project-card {
+  width: 620px;
+  height: 414px;
+  margin: 80px 0;
+}
+
+img.project-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.tech-stack {
+  display: flex;
+  width: 100%;
+}
+
+.language-bubbles {
+  background-color: #3c414e;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0 8px;
+}
+
+.language-bubbles:nth-child(1) {
+  margin: 0 8px 0 0;
+}

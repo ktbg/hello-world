@@ -1,0 +1,82 @@
+/* ----------- header hero section ----------------- */
+.home-header {
+  margin: 115px 0 120.5px 0;
+}
+
+.home-header-text-container {
+  width: 750px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.leading-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999fb1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 12.5px;
+}
+
+.home-header-title {
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 90px;
+}
+
+.brand-statement {
+  color: #bdc0c7;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 31px 0 62px 0;
+  letter-spacing: 0.003em;
+}
+
+/* ----------- About section --------------------- */
+.about-me {
+  background-color: #1b1c21;
+  height: 996px;
+  padding: 166px 0 120px 0;
+}
+
+.about-img-container {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  height: 70%;
+  background-image: url("../../assets/507D8CC1-40C1-4675-8C8B-7AC3304E567C_1_105_c.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-me-heading {
+  font-size: 96px;
+  font-weight: 700;
+  position: relative;
+  top: -60px;
+}
+
+.about-me-text {
+  padding-top: 42px;
+  line-height: 28px;
+  font-size: 14px;
+  letter-spacing: 0.003em;
+  width: 60%;
+  margin: 0 auto;
+  color: #bdc0c7;
+}
+
+/* ------------ Projects section -------------------- */
+.home-projects-container {
+  height: auto;
+  text-align: left;
+  padding: 120px 80px;
+}
+
+.projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
