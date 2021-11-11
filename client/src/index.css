@@ -25,7 +25,19 @@ a:active {
 }
 
 a:hover {
-  /* text-decoration: underline;
-  text-decoration-color: #d8699e; */
   border-bottom: 2px solid #d8669e;
+}
+
+.redirect-pink {
+  display: flex;
+  align-items: center;
+  color: #d8669e;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.redirect-pink:hover {
+  border: none;
 }
