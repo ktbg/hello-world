@@ -45,9 +45,10 @@
   position: relative;
   margin: 0 auto;
   height: 70%;
-  background-image: url("../../assets/3D9091A4-4F39-4A13-A61A-E1E7BB29C629_1_105_c.jpeg");
+  background-image: url("../../assets/507D8CC1-40C1-4675-8C8B-7AC3304E567C_1_105_c.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .about-me-heading {
