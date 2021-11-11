@@ -41,3 +41,8 @@ a:hover {
 .redirect-pink:hover {
   border: none;
 }
+
+.dark-grey {
+  color: #808593;
+  font-weight: 700;
+}
