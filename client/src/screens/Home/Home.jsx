@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import "../../utils/projectList";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Home = () => {
   return (
@@ -56,18 +58,7 @@ const Home = () => {
           <h2 className="projects-heading">Projects</h2>
         </div>
         <div className="projects-box">
-          <div className="project-card">
-            <div className="project-img"></div>
-            <div className="project-details">
-              <h4 className="project-title">Connoisseur</h4>
-              <div className="tech-stack">
-                <div className="language-bubbles">HTML</div>
-                <div className="language-bubbles">CSS</div>
-                <div className="language-bubbles">JavaScript</div>
-                <div className="language-bubbles"></div>
-              </div>
-            </div>
-          </div>
+          <ProjectCard />
         </div>
       </div>
     </div>

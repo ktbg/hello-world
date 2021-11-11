@@ -69,38 +69,13 @@
 
 /* ------------ Projects section -------------------- */
 .home-projects-container {
-  height: 1490px;
+  height: auto;
   text-align: left;
   padding: 120px 80px;
 }
 
-.projects-heading {
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 90px;
-}
-
-.project-card {
-  max-width: 50%;
-  height: 30%;
-}
-
-.project-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-
-.tech-stack {
+.projects-box {
   display: flex;
-  /* justify-content: space-between; */
-}
-
-.language-bubbles {
-  background-color: #3c414e;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  border-radius: 50px;
-  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
