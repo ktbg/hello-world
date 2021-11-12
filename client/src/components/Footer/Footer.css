@@ -67,3 +67,7 @@ footer {
 .footer-right-link:hover {
   border: none;
 }
+
+.footer-right-link:hover {
+  border-left: 1px solid #494c5a;
+}
