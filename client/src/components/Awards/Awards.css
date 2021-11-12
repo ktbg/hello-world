@@ -1,0 +1,28 @@
+.awards-body {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.awards-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.awards-grid {
+  /* display: grid;
+  grid-template-areas:
+    "a c"
+    "b d"; */
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.award {
+  padding: 24px 0;
+  border-bottom: 1px solid #808593;
+  width: 48%;
+  font-size: 13px;
+  text-align: left;
+}

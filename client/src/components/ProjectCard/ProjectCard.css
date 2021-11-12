@@ -1,7 +1,10 @@
-.projects-heading {
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 90px;
+a.project-card-link:hover {
+  border: none;
+}
+
+a.project-card-link:hover img {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 6px 5px#d8669e;
 }
 
 .project-card {
@@ -13,6 +16,7 @@
 img.project-img {
   max-width: 100%;
   height: auto;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-title {

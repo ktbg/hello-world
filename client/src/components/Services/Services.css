@@ -1,0 +1,20 @@
+.services-text {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.services-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.services-list {
+  margin: 38px 0 34px 0;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #cacdd4;
+}

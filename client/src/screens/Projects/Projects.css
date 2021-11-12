@@ -1,0 +1,18 @@
+/* ------------ Projects section (see ProjectCard.css) -------------------- */
+.home-projects-container {
+  height: auto;
+  text-align: left;
+  padding: 120px 80px;
+}
+
+.projects-heading {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
