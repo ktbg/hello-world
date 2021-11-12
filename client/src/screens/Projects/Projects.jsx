@@ -1,7 +1,16 @@
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import "./Projects.css";
+
 const Projects = () => {
   return (
-    <div>
-      <h1>Check out my projects</h1>
+    <div className="home-projects-container">
+      <div className="projects-title-group">
+        <p className="leading-text">Featured</p>
+        <h2 className="projects-heading">Projects</h2>
+      </div>
+      <div className="projects-box">
+        <ProjectCard />
+      </div>
     </div>
   );
 };
