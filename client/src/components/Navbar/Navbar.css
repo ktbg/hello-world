@@ -2,6 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 25px 80px;
+  width: 100%;
   height: 77px;
   font-weight: 700;
 }

@@ -5,7 +5,7 @@ import "./About.css";
 const About = () => {
   return (
     <div>
-      <header>
+      <header className="page-max">
         <div className="about-screen-container">
           <div className="about-header-left">
             <h2 className="about-title">About Me</h2>
@@ -54,7 +54,9 @@ const About = () => {
         </div>
       </header>
       <main>
-        <Services />
+        <div className="dark">
+          <Services />
+        </div>
         <Awards />
       </main>
     </div>

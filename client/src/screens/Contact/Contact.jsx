@@ -1,4 +1,5 @@
 import "./Contact.css";
+import "../../App.css";
 import Send from "../../utils/send";
 import SocialsIg from "../../utils/SocialsIg";
 import SocialsGh from "../../utils/SocialsGh";
@@ -6,16 +7,16 @@ import SocialsLi from "../../utils/SocialsLi";
 
 const Contact = () => {
   return (
-    <div>
-      <header className="contact-header">
+    <div className="page-max">
+      <header className="contact-header page-max">
         <h2 className="contact-title">Contact</h2>
       </header>
-      <main>
+      <main className="page-max">
         <div className="contact-container">
           <div className="contact-left">
             <p className="contact-helper-text">
               To avoid getting added to any spam lists, I've included my email
-              address as an image below. If you feel like typing that in and
+              address as an image below. If you prefer typing that in and
               reaching out that way feel free! Otherwise, the form on the right
               will achieve the same result.
             </p>
@@ -25,7 +26,7 @@ const Contact = () => {
               <div className="social-logos">
                 <a
                   className="social-link"
-                  href=""
+                  href="https://www.linkedin.com/in/katherine-boates-goudreau/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -33,7 +34,7 @@ const Contact = () => {
                 </a>
                 <a
                   className="social-link"
-                  href=""
+                  href="https://www.instagram.com/metlgrl/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -41,7 +42,7 @@ const Contact = () => {
                 </a>
                 <a
                   className="social-link"
-                  href=""
+                  href="https://github.com/ktbg"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -55,7 +56,7 @@ const Contact = () => {
               <label name="email">
                 <input
                   className="single-line-input"
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Email"
                 ></input>
