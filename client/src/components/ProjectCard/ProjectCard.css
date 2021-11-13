@@ -1,17 +1,7 @@
-/* DUCHESS */
-/* a.project-card-link:hover {
-  border: none;
-}
-
-a.project-card-link:hover img {
-  transform: scale(1.01);
-  box-shadow: 1px 1px 6px 5px#d8669e;
-} */
-
 .project-card {
-  width: 47%;
-  height: 414px;
-  margin: 60px 0;
+  width: 48%;
+  height: auto;
+  margin: 30px 0;
 }
 
 img.project-img {
@@ -24,9 +14,36 @@ img.project-img {
   font-size: 28px;
   font-weight: 700;
   margin-top: 24px;
-  margin-bottom: 16px;
 }
 
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.project-link-group {
+  display: flex;
+}
+
+.project-link {
+  text-decoration: underline;
+  align-items: flex-start;
+  font-weight: 400;
+}
+
+.separator {
+  padding: 0 10px;
+}
+
+.project-description-container {
+  margin: 20px 0;
+}
+
+.project-description {
+  font-size: 14px;
+  line-height: 1.5em;
+}
 .tech-stack {
   display: flex;
   width: 100%;

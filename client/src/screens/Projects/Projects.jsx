@@ -1,3 +1,4 @@
+import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Projects.css";
 

@@ -1,3 +1,4 @@
+import React from "react";
 const send = () => {
   return (
     <svg
@@ -7,20 +8,20 @@ const send = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_11:424)">
+      <g clipPath="url(#clip0_11:424)">
         <path
           d="M17.7748 10.5448H4.81116"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M17.7746 10.5449L1.86471 18.2052L4.81099 10.5449L1.86471 2.88456L17.7746 10.5449Z"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>

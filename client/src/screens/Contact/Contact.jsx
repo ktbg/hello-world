@@ -1,3 +1,4 @@
+import React from "react";
 import "./Contact.css";
 import "../../App.css";
 import Send from "../../utils/send";
@@ -28,7 +29,7 @@ const Contact = () => {
                   className="social-link"
                   href="https://www.linkedin.com/in/katherine-boates-goudreau/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <SocialsLi />
                 </a>
@@ -36,7 +37,7 @@ const Contact = () => {
                   className="social-link"
                   href="https://www.instagram.com/metlgrl/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <SocialsIg className="social-middle" />
                 </a>
@@ -44,7 +45,7 @@ const Contact = () => {
                   className="social-link"
                   href="https://github.com/ktbg"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <SocialsGh />
                 </a>
