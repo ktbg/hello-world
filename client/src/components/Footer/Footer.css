@@ -1,8 +1,8 @@
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   height: 273px;
-  background-color: #1b1c21;
+  /* background-color: #1b1c21; */
   padding: 80px 80px 69px 80px;
 }
 
@@ -33,9 +33,10 @@ footer {
 
 .copyright-text {
   color: #838ba0;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14.52px;
   margin-top: 54px;
+  text-align: left;
 }
 
 .licenses {
@@ -66,4 +67,8 @@ footer {
 .footer-left-link:hover,
 .footer-right-link:hover {
   border: none;
+}
+
+.footer-right-link:hover {
+  border-left: 1px solid #494c5a;
 }

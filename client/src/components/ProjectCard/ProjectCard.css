@@ -1,16 +1,17 @@
-a.project-card-link:hover {
+/* DUCHESS */
+/* a.project-card-link:hover {
   border: none;
 }
 
 a.project-card-link:hover img {
   transform: scale(1.01);
   box-shadow: 1px 1px 6px 5px#d8669e;
-}
+} */
 
 .project-card {
-  width: 620px;
+  width: 47%;
   height: 414px;
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 img.project-img {

@@ -2,7 +2,7 @@ import "./Awards.css";
 
 const Awards = () => {
   return (
-    <div className="awards-container">
+    <div className="awards-container page-max">
       <div className="awards-body">
         <h4 className="awards-title">Awards &amp; Certifications</h4>
         <div className="awards-grid">

@@ -5,11 +5,13 @@ import Contact from "./screens/Contact/Contact";
 import Projects from "./screens/Projects/Projects";
 import Resume from "./screens/Resume/Resume";
 import Layout from "./layouts/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

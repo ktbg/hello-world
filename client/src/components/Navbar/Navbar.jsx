@@ -3,10 +3,12 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav>
-      <NavLink className="logo" to="/">
-        Katie Boates-Goudreau
-      </NavLink>
+    <nav className="page-max">
+      <div className="nav">
+        <NavLink className="logo" to="/">
+          Katie Boates-Goudreau
+        </NavLink>
+      </div>
       <div className="nav-right">
         <NavLink className="nav-link-right" to="about">
           About

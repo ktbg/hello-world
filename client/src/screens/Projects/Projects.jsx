@@ -3,7 +3,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div className="home-projects-container">
+    <div className="home-projects-container page-max">
       <div className="projects-title-group">
         <p className="leading-text">Featured</p>
         <h2 className="projects-heading">Projects</h2>
