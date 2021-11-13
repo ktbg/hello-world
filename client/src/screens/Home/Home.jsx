@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
+import React from "react";
 import "./Home.css";
 import "../../utils/projectList";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Awards from "../../components/Awards/Awards";
 import Services from "../../components/Services/Services";
 import Projects from "../../screens/Projects/Projects";
+import PinkLink from "../../components/PinkLink";
 
 const Home = () => {
   return (
@@ -22,17 +21,7 @@ const Home = () => {
               enthusiastic collaborator with excellent communication skills and
               a passion for problem solving.
             </p>
-            <Link className="redirect-pink" to="contact">
-              <p>Lets talk </p>
-              <ArrowForwardIcon
-                sx={{
-                  color: "d8669e",
-                  fontSize: "12px",
-                  marginLeft: "10px",
-                  fontWeight: "700",
-                }}
-              />
-            </Link>
+            <PinkLink linkName="let's talk" linkTo="contact" />
           </div>
         </header>
       </div>
@@ -52,15 +41,17 @@ const Home = () => {
               and teams across industries to create effective solutions and
               drive innovation to make lives better.
             </p>
+            <div className="more-about-link">
+              <PinkLink linkTo="about" linkName="more about me" />
+            </div>
           </div>
         </div>
       </div>
 
       <Projects />
       <div className="dark">
-        <Services />
+        <Services linkName="contact me" linkTo="/contact" />
       </div>
-      <Awards />
     </div>
   );
 };

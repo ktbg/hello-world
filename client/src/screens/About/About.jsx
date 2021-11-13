@@ -1,5 +1,5 @@
+import React from "react";
 import Services from "../../components/Services/Services";
-import Awards from "../../components/Awards/Awards";
 import "./About.css";
 
 const About = () => {
@@ -55,9 +55,8 @@ const About = () => {
       </header>
       <main>
         <div className="dark">
-          <Services />
+          <Services linkName="let's talk" linkTo="/contact" />
         </div>
-        <Awards />
       </main>
     </div>
   );

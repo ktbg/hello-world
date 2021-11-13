@@ -1,7 +1,10 @@
+import React from "react";
+import MyResume from "../../utils/MyResume/MyResume";
+
 const Resume = () => {
   return (
-    <div>
-      <h1>Resume</h1>
+    <div className="page-max">
+      <MyResume />
     </div>
   );
 };

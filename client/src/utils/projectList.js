@@ -1,30 +1,39 @@
 export const projectList = [
   {
-    title: "Connoisseur",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    imgUrl:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-    deployUrl: "https://ktbg.github.io/connoisseur/",
+    title: "Grocery Express",
+    techStack: ["React", "Ruby on Rails", "PostgreSQL"],
+    imgUrl: "grocery-express.png",
+    deployUrl: "https://grocery-express.netlify.app/",
+    gitHub: "https://github.com/ktbg/grocery-express",
+    description:
+      "Grocery Express is a full stack solo project built with a Ruby on Rails and PostgreSQL back end and React front end. This application allows users to interact with product ratings which are then attributed to the user and stored in the database.",
   },
   {
     title: "TASQ",
     techStack: ["React", "Tailwindcss"],
-    imgUrl:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    imgUrl: "tasq.png",
     deployUrl: "https://tasq.netlify.app/",
+    gitHub: "https://github.com/ktbg/tasq",
+    description:
+      "TASQ is a to do list application using a relational database built using Airtable with a React front end that allows users to create and manage lists.",
   },
   {
     title: "EVNTZ",
-    techStack: ["MongoDB", "React", "Express", "Node.js", "bcrypt", "JWT"],
-    imgUrl:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+    techStack: ["React", "Express", "Node.js", "MongoDB", "bcrypt", "JWT"],
+    imgUrl: "evntz.png",
     deployUrl: "https://suspicious-shirley-aff7c1.netlify.app/",
+    gitHub: "https://github.com/erik-eyler/EVNTZ",
+    description:
+      "EVNTZ is a full stack web application built as a team project. The goal is to connect members of the fictitious Newcastle, NJ through community events. Full user authentication allows registered user to create and modify events for their community.",
   },
+
   {
-    title: "Grocery Express",
-    techStack: ["Ruby on Rails", "React", "PostgreSQL"],
-    imgUrl:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
-    deployUrl: "https://grocery-express.netlify.app/",
+    title: "Connoisseur",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    imgUrl: "connoisseur.png",
+    deployUrl: "https://ktbg.github.io/connoisseur/",
+    gitHub: "https://github.com/ktbg/connoisseur",
+    description:
+      "The goal of this project was to consume a third party API and render content. Using axios and JavaScript, get requests were made to the Metropolitan Museum of Art API to return randomized works on page load or user search results.",
   },
 ];

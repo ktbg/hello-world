@@ -8,24 +8,39 @@ const ProjectCard = () => {
     <>
       {projectList.map((project, index) => {
         return (
-          // <a DUCHESS
-          //   className="project-card-link"
-          //   href={project.deployUrl}
-          //   alt={project.title}
-          //   key={index}
-          //   target="_blank"
-          //   rel="noreferrer"
-          // >
-          <div className="project-card">
+          <div className="project-card" key={index}>
             <div className="project-img-container">
               <img
                 className="project-img"
-                src={project.imgUrl}
+                src={
+                  require(`../../assets/project-images/${project.imgUrl}`)
+                    .default
+                }
                 alt={project.title}
               />
             </div>
             <div className="project-details">
-              <h4 className="project-title">{project.title}</h4>
+              <div className="project-header">
+                <h4 className="project-title">{project.title}</h4>
+                <div className="project-link-group">
+                  <a
+                    className="redirect-pink project-link"
+                    href={project.gitHub}
+                  >
+                    github
+                  </a>
+                  <p className="separator"> | </p>
+                  <a
+                    className="redirect-pink project-link"
+                    href={project.deployUrl}
+                  >
+                    Live demo
+                  </a>
+                </div>
+              </div>
+              <div className="project-description-container">
+                <p className="project-description">{project.description}</p>
+              </div>
               <div className="tech-stack">
                 {project.techStack.map((language, index) => (
                   <div className="language-bubbles" key={index}>

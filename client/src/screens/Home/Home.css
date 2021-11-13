@@ -36,15 +36,15 @@
 /* ----------- About section --------------------- */
 .about-me {
   background-color: #1b1c21;
-  height: 996px;
-  padding: 166px 0 120px 0;
+  height: auto;
+  padding: 166px 0 80px 0;
 }
 
 .about-img-container {
   width: 90%;
   position: relative;
   margin: 0 auto;
-  height: 80%;
+  height: 480px;
   background-image: url("../../assets/507D8CC1-40C1-4675-8C8B-7AC3304E567C_1_105_c.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,11 +61,17 @@
 .about-me-text {
   padding-top: 42px;
   line-height: 28px;
-  font-size: 14px;
-  letter-spacing: 0.003em;
+  font-size: 16px;
+  letter-spacing: 0.03em;
   width: 60%;
   margin: 0 auto;
   color: #bdc0c7;
+}
+
+div.more-about-link {
+  width: 50%;
+  margin: 40px auto;
+  text-align: center;
 }
 
 /* ---------- services section (see Services.css) ---------------------------- */

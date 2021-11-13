@@ -1,28 +1,18 @@
-import { Link } from "react-router-dom";
+import React from "react";
 import "./Services.css";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import PinkLink from "../PinkLink";
 
-const Services = () => {
+const Services = ({ linkName, linkTo }) => {
   return (
     <div className="page-max">
       <div className="services-container">
         <div className="services-text">
-          <h4 className="services-title">Services</h4>
+          <h4 className="services-title">Technical Skills</h4>
           <div className="services-list">
-            Full Stack Development / Front End Development / Back End
-            Development
+            HTML 5 / CSS 3 / JavaScript / SQL / PostgreSQL / Ruby / Ruby on
+            Rails / React / Node.js / Express / Git / GitHub
           </div>
-          <Link className="redirect-pink" to="about">
-            <p>More about me </p>
-            <ArrowForwardIcon
-              sx={{
-                color: "d8669e",
-                fontSize: "12px",
-                marginLeft: "10px",
-                fontWeight: "700",
-              }}
-            />
-          </Link>
+          <PinkLink linkName={linkName} linkTo={linkTo} />
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
@@ -22,12 +23,12 @@ const Footer = () => {
             </p>
           </div>
           <div className="licenses">
-            <Link className="license-link footer-left-link" to="#">
+            {/* <Link className="license-link footer-left-link" to="#"> DUCHESS
               Cookie Policy
             </Link>
             <Link className="license-link footer-right-link" to="#">
               Unsplash
-            </Link>
+            </Link> */}
           </div>
         </div>
       </footer>
