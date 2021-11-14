@@ -1,0 +1,68 @@
+.burger {
+  position: absolute;
+  top: 20px;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+span.patty {
+  width: 2rem;
+  height: 0.25rem;
+  background: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+span.rotate:first-child {
+  transform: rotate(45deg);
+}
+
+span.rotate:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+span.rotate:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu {
+  top: 0;
+  right: 0;
+  background: #252830;
+  height: 100vh;
+  width: 100vw;
+  text-align: left;
+  padding-top: 100px;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.menu a {
+  padding: 15px 50px;
+  border: none;
+}

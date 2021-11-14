@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="page-max">
       <header className="contact-header page-max">
-        <h2 className="contact-title">Contact</h2>
+        <h2 className="contact title">Contact</h2>
       </header>
       <main className="page-max">
         <div className="contact-container">

@@ -3,9 +3,7 @@ header.contact-header {
   margin-top: 65px;
 }
 
-.contact-title {
-  font-size: 96px;
-  font-weight: 700;
+.contact {
   width: 85%;
   margin: 0 auto;
 }

@@ -18,3 +18,9 @@
   letter-spacing: 0.02em;
   color: #cacdd4;
 }
+
+@media screen and (max-width: 526px) {
+  .services-text {
+    width: 90%;
+  }
+}

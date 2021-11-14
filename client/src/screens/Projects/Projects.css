@@ -3,12 +3,10 @@
   height: auto;
   text-align: left;
   padding: 120px 80px;
+  margin: 0 auto;
 }
 
 .projects-heading {
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 90px;
   margin-bottom: 60px;
 }
 
@@ -16,4 +14,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 996px) {
+  .home-projects-container {
+    padding: 120px 60px;
+  }
+  .projects-group {
+    margin: 0 auto;
+  }
+  .projects-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  /* project logo shrink */
+  .home-projects-container {
+    padding: 120px 20px;
+  }
 }
