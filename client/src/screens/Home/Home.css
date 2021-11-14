@@ -5,6 +5,7 @@
 
 .home-header-text-container {
   width: 750px;
+  max-width: 90%;
   margin: 0 auto;
   text-align: left;
 }
@@ -18,12 +19,12 @@
   margin-bottom: 12.5px;
 }
 
-.home-header-title {
+/* .home-header-title {
   font-size: 96px;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 90px;
-}
+} */
 
 .brand-statement {
   color: #bdc0c7;
@@ -52,8 +53,6 @@
 }
 
 .about-me-heading {
-  font-size: 96px;
-  font-weight: 700;
   position: relative;
   top: -60px;
 }
@@ -63,15 +62,18 @@
   line-height: 28px;
   font-size: 16px;
   letter-spacing: 0.03em;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   color: #bdc0c7;
+  text-align: left;
 }
 
-div.more-about-link {
-  width: 50%;
+.more-about {
   margin: 40px auto;
-  text-align: center;
+  width: 70%;
+}
+.more-about-link {
+  margin: 0 auto;
 }
 
 /* ---------- services section (see Services.css) ---------------------------- */

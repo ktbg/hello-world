@@ -5,12 +5,14 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <div className="home-projects-container page-max">
-      <div className="projects-title-group">
-        <p className="leading-text">Featured</p>
-        <h2 className="projects-heading">Projects</h2>
-      </div>
-      <div className="projects-box">
-        <ProjectCard />
+      <div className="projects-group">
+        <div className="projects-title-group">
+          <p className="leading-text">Featured</p>
+          <h2 className="projects-heading title">Projects</h2>
+        </div>
+        <div className="projects-box">
+          <ProjectCard />
+        </div>
       </div>
     </div>
   );

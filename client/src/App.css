@@ -11,3 +11,22 @@
   background-color: #1b1c21;
   width: 100vw;
 }
+
+.title {
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-max {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .title {
+    font-size: 64px;
+  }
+}

@@ -13,8 +13,8 @@ const Home = () => {
         <header className="home-header">
           <div className="home-header-text-container">
             <p className="leading-text">full stack</p>
-            <h2 className="home-header-title">Software</h2>
-            <h2 className="home-header-title">Developer</h2>
+            <h2 className="title">Software</h2>
+            <h2 className="title">Developer</h2>
             <p className="brand-statement">
               This text will say a little something about why you want to hire
               me, and what a great asset to your team I'll be. I'm an
@@ -31,7 +31,7 @@ const Home = () => {
         <div className="page-max">
           <div className="about-me">
             <div className="about-img-container">
-              <h2 className="about-me-heading">About Me</h2>
+              <h2 className="about-me-heading title">About Me</h2>
             </div>
             <p className="about-me-text">
               From physics, to special effects make-up, to natural products
@@ -41,8 +41,12 @@ const Home = () => {
               and teams across industries to create effective solutions and
               drive innovation to make lives better.
             </p>
-            <div className="more-about-link">
-              <PinkLink linkTo="about" linkName="more about me" />
+            <div className="more-about">
+              <PinkLink
+                className="more-about-link"
+                linkTo="about"
+                linkName="more about me"
+              />
             </div>
           </div>
         </div>

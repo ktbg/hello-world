@@ -26,7 +26,7 @@
 .footer-socials {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 250px;
   height: 28px;
 }
 
@@ -70,4 +70,25 @@
 
 .footer-right-link:hover {
   border-left: 1px solid #494c5a;
+}
+
+@media screen and (max-width: 996px) {
+  .footer {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .footer {
+    width: 90%;
+  }
 }
