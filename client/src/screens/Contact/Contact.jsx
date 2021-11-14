@@ -7,6 +7,11 @@ import SocialsGh from "../../utils/SocialsGh";
 import SocialsLi from "../../utils/SocialsLi";
 
 const Contact = () => {
+  const handleSend = (e) => {
+    e.preventDefault();
+    console.log("send button clicked");
+  };
+
   return (
     <div className="page-max">
       <header className="contact-header page-max">
@@ -53,37 +58,39 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-right">
-            <form className="contact-form">
-              <label name="email">
-                <input
-                  className="single-line-input"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                ></input>
-              </label>
-              <label name="subject">
-                <input
-                  className="single-line-input"
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                ></input>
-              </label>
-              <label>
-                <textarea
-                  className="text-area"
-                  type="text-area"
-                  name="message"
-                  placeholder="What would you like to say?"
-                  rows="6"
-                  cols="44"
-                ></textarea>
-              </label>
-              <button className="send-btn">
-                Send Message <Send />
-              </button>
-            </form>
+            <div className="contact-form-container">
+              <form className="contact-form">
+                <label name="email">
+                  <input
+                    className="single-line-input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  ></input>
+                </label>
+                <label name="subject">
+                  <input
+                    className="single-line-input"
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                  ></input>
+                </label>
+                <label>
+                  <textarea
+                    className="text-area"
+                    type="text-area"
+                    name="message"
+                    placeholder="What would you like to say?"
+                    rows="6"
+                    cols="44"
+                  ></textarea>
+                </label>
+                <button className="send-btn" onClick={(e) => handleSend(e)}>
+                  Send Message <Send />
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </main>
