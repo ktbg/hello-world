@@ -8,7 +8,7 @@ const About = () => {
       <header className="page-max">
         <div className="about-screen-container">
           <div className="about-header-left">
-            <h2 className="about-title">About Me</h2>
+            <h2 className="title">About Me</h2>
             <p className="about-text">
               They've coming in! Three marks at two ten. I'll take them myself!
               Cover me! Yes, sir. I can't maneuver! Stay on target. We're too
