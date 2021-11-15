@@ -5,7 +5,7 @@ let apiUrl;
 
 // you'll want to deploy back end api to heroku to get this information
 const apiUrls = {
-  production: "https://sei-products-api.herokuapp.com/api",
+  production: "https://kbg-portfolio-back-end.herokuapp.com/",
   development: "http://localhost:3000/",
 };
 
