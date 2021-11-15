@@ -1,21 +1,115 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 import "../../App.css";
 import Send from "../../utils/send";
 import SocialsIg from "../../utils/SocialsIg";
 import SocialsGh from "../../utils/SocialsGh";
 import SocialsLi from "../../utils/SocialsLi";
+import { sendMail } from "../../services";
 
 const Contact = () => {
-  const handleSend = (e) => {
-    e.preventDefault();
-    console.log("send button clicked");
+  const [success, setSuccess] = useState(false);
+  // const [isVerified, setIsVerified] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    subject: "",
+    message: "",
+    token: "",
+  });
+  const reRef = useRef();
+  const { REACT_APP_SITE_KEY } = process.env;
+
+  // ------------ handle input change, store in formData variable --------------
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
+
+  // --------------- handle submit and check form validation ------------------
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!handleValidation()) {
+      alert("Please fill out all fields before sending message, thanks!");
+      return;
+    } else {
+      verifyHuman();
+    }
+  };
+
+  // ---------- validate inputs ------------------------------------
+
+  const handleValidation = () => {
+    if (
+      formData.subject === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  // ---------- verify human via Recaptcha token -------------------
+
+  const verifyHuman = async () => {
+    const token = await reRef.current.executeAsync(); // async state change to add token
+    reRef.current.reset(); // resets token for next verification
+
+    const res = await sendMail({
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      token: token,
+    });
+    console.log(res);
+    setSuccess(true);
+    successTimer();
+    // setIsVerified(false);
+    setFormData({
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
+  // ---------- setTimeout function for success message -------------
+
+  const successTimer = () => {
+    setTimeout(() => setSuccess(false), 4000);
+  };
+
+  // ----------- submit verfied user email ---------------------------
+
+  // const sendVerifiedEmail = async (data) => {
+  //   console.log(data);
+  //   const res = await sendMail(data);
+  //   console.log(res);
+  //   setSuccess(true);
+  //   successTimer();
+  //   // setIsVerified(false);
+  //   setFormData({
+  //     email: "",
+  //     subject: "",
+  //     message: "",
+  //   });
+  // };
 
   return (
     <div className="page-max">
       <header className="contact-header page-max">
         <h2 className="contact title">Contact</h2>
+        {success ? (
+          <p className="email-success">Your email has been sent, thank you!</p>
+        ) : (
+          <p className="email-success"></p>
+        )}
       </header>
       <main className="page-max">
         <div className="contact-container">
@@ -59,13 +153,20 @@ const Contact = () => {
           </div>
           <div className="contact-right">
             <div className="contact-form-container">
-              <form className="contact-form">
+              <form
+                className="contact-form"
+                onSubmit={handleSubmit}
+                method="POST"
+              >
                 <label name="email">
                   <input
                     className="single-line-input"
                     type="email"
                     name="email"
+                    value={formData.email}
                     placeholder="Email"
+                    onChange={handleChange}
+                    required
                   ></input>
                 </label>
                 <label name="subject">
@@ -73,7 +174,10 @@ const Contact = () => {
                     className="single-line-input"
                     type="text"
                     name="subject"
+                    value={formData.subject}
                     placeholder="Subject"
+                    onChange={handleChange}
+                    required
                   ></input>
                 </label>
                 <label>
@@ -81,14 +185,28 @@ const Contact = () => {
                     className="text-area"
                     type="text-area"
                     name="message"
+                    value={formData.message}
                     placeholder="What would you like to say?"
                     rows="6"
                     cols="44"
+                    onChange={handleChange}
+                    required
                   ></textarea>
                 </label>
-                <button className="send-btn" onClick={(e) => handleSend(e)}>
+                <button
+                  type="submit"
+                  className="send-btn"
+                  onClick={(e) => handleSubmit(e)}
+                >
                   Send Message <Send />
                 </button>
+                <div className="recaptcha-box">
+                  <ReCAPTCHA
+                    sitekey={REACT_APP_SITE_KEY}
+                    size="invisible"
+                    ref={reRef}
+                  />
+                </div>
               </form>
             </div>
           </div>
