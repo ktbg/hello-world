@@ -10,7 +10,6 @@ import { sendMail } from "../../services";
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
-  // const [isVerified, setIsVerified] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -38,7 +37,23 @@ const Contact = () => {
       alert("Please fill out all fields before sending message, thanks!");
       return;
     } else {
-      verifyHuman();
+      const token = await reRef.current.executeAsync();
+      reRef.current.reset(); // resets token for next verification
+
+      const res = await sendMail({
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        captcha: token,
+      });
+      console.log(res);
+      setSuccess(true);
+      successTimer();
+      setFormData({
+        email: "",
+        subject: "",
+        message: "",
+      });
     }
   };
 
@@ -56,50 +71,11 @@ const Contact = () => {
     }
   };
 
-  // ---------- verify human via Recaptcha token -------------------
-
-  const verifyHuman = async () => {
-    const token = await reRef.current.executeAsync(); // async state change to add token
-    reRef.current.reset(); // resets token for next verification
-
-    const res = await sendMail({
-      email: formData.email,
-      subject: formData.subject,
-      message: formData.message,
-      token: token,
-    });
-    console.log(res);
-    setSuccess(true);
-    successTimer();
-    // setIsVerified(false);
-    setFormData({
-      email: "",
-      subject: "",
-      message: "",
-    });
-  };
-
   // ---------- setTimeout function for success message -------------
 
   const successTimer = () => {
     setTimeout(() => setSuccess(false), 4000);
   };
-
-  // ----------- submit verfied user email ---------------------------
-
-  // const sendVerifiedEmail = async (data) => {
-  //   console.log(data);
-  //   const res = await sendMail(data);
-  //   console.log(res);
-  //   setSuccess(true);
-  //   successTimer();
-  //   // setIsVerified(false);
-  //   setFormData({
-  //     email: "",
-  //     subject: "",
-  //     message: "",
-  //   });
-  // };
 
   return (
     <div className="page-max">

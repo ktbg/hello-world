@@ -1,7 +1,9 @@
-const express = require("express");
-const logger = require("morgan");
-const cors = require("cors");
-const axios = require("axios");
+import fetch from "node-fetch";
+import express from "express";
+import logger from "morgan";
+import cors from "cors";
+import nodemailer from "nodemailer";
+import {} from "dotenv/config";
 
 const PORT = process.env.PORT || 3000;
 
@@ -14,31 +16,20 @@ app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
 });
 
-const nodemailer = require("nodemailer");
-require("dotenv").config();
-
 // ---------- recaptcha validation -------------------------
 
-// const validateHuman = async (token) => {
-//   const res = await axios.post(
-//     `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
-//   );
-//   console.log(res);
-//   return false;
-// };
+async function validateHuman(token) {
+  const response = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`,
+    {
+      method: "POST",
+    }
+  );
+  const data = await response.json();
+  return data.success;
+}
 
-// // ---------- validation check before we even get to send ----------------
-// const sendValidation = async (req, res) => {
-//   const human = await validateHuman(req.body.token);
-//   console.log(human);
-//   console.log(res);
-//   if (!human) {
-//     console.log("not today bot!");
-//     return;
-//   }
-//   console.log("successful token");
-// };
-// // ---- sets up mail server for communication with form in application ---
+// ---- sets up mail server for communication with form in application --
 
 const transporter = nodemailer.createTransport({
   host: process.env.HOST,
@@ -53,18 +44,25 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// ====================== THIS VERSION WORKS TO SEND EMAIL W/O 404 ERROR ========================
 // route to send mail, called from client/services/index.js
+
 app.post("/send", async function (req, res) {
+  // checks reCaptcha verification
+  const human = await validateHuman(req.body.captcha);
+  if (!human) {
+    res.status(400);
+    res.json({ errors: ["Not today bot!"] });
+    return;
+  }
   // my default email format for any contact form request that comes through
   let mailOptions = {
     from: "hello@allaboatesgoudreau.com",
     to: "hello@allaboatesgoudreau.com",
     subject: "Contact Form Submission",
     html: `
-      <h1>${req.body.subject}</h1>
-      <p>From: ${req.body.email}</p>
-      <p>Message: ${req.body.message}</p>`,
+          <h1>${req.body.subject}</h1>
+          <p>From: ${req.body.email}</p>
+          <p>Message: ${req.body.message}</p>`,
   };
 
   // nodemailer sendMail function
@@ -77,7 +75,6 @@ app.post("/send", async function (req, res) {
     }
   });
 });
-// =============================================================================================
 
 // nodemailer verify function for testing
 
@@ -85,6 +82,6 @@ transporter.verify(function (error, success) {
   if (error) {
     console.log(error);
   } else {
-    console.log(success, "Yes this is truly working now");
+    console.log(success);
   }
 });
