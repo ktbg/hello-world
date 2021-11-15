@@ -1,6 +1,16 @@
 header.contact-header {
   text-align: left;
   margin-top: 65px;
+  display: flex;
+  align-items: flex-end;
+  width: 85%;
+}
+
+.email-success {
+  font-weight: 700;
+  color: #d8669e;
+  width: 429px;
+  margin-right: 145px;
 }
 
 .contact {
@@ -99,6 +109,10 @@ textarea {
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+}
+
+.recaptcha-box {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1000px) {
