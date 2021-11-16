@@ -16,10 +16,9 @@ const Home = () => {
             <h2 className="title">Software</h2>
             <h2 className="title">Developer</h2>
             <p className="brand-statement">
-              This text will say a little something about why you want to hire
-              me, and what a great asset to your team I'll be. I'm an
-              enthusiastic collaborator with excellent communication skills and
-              a passion for problem solving.
+              Passionate about learning and deeply fulfilled by acquiring new
+              skills and knowledge, problem solving, and building amazing things
+              with amazing people.
             </p>
             <PinkLink linkName="let's talk" linkTo="contact" />
           </div>

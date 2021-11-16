@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { toast } from "react-toastify";
 import "./Contact.css";
 import "../../App.css";
 import Send from "../../utils/send";
@@ -9,7 +10,6 @@ import SocialsLi from "../../utils/SocialsLi";
 import { sendMail } from "../../services";
 
 const Contact = () => {
-  const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -31,24 +31,33 @@ const Contact = () => {
 
   // --------------- handle submit and check form validation ------------------
 
+  const notifyError = () => {
+    toast.error("Please fill out all fields before sending message, thanks!");
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!handleValidation()) {
-      alert("Please fill out all fields before sending message, thanks!");
+      notifyError();
       return;
     } else {
       const token = await reRef.current.executeAsync();
       reRef.current.reset(); // resets token for next verification
 
-      const res = await sendMail({
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        captcha: token,
-      });
+      const res = await toast.promise(
+        sendMail({
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          captcha: token,
+        }),
+        {
+          pending: "Sending....",
+          success: "Email sent! Thank you!",
+          error: "Something went wrong, please try again.",
+        }
+      );
       console.log(res);
-      setSuccess(true);
-      successTimer();
       setFormData({
         email: "",
         subject: "",
@@ -73,28 +82,19 @@ const Contact = () => {
 
   // ---------- setTimeout function for success message -------------
 
-  const successTimer = () => {
-    setTimeout(() => setSuccess(false), 4000);
-  };
-
   return (
     <div className="page-max">
       <header className="contact-header page-max">
         <h2 className="contact title">Contact</h2>
-        {success ? (
-          <p className="email-success">Your email has been sent, thank you!</p>
-        ) : (
-          <p className="email-success"></p>
-        )}
       </header>
       <main className="page-max">
         <div className="contact-container">
           <div className="contact-left">
             <p className="contact-helper-text">
               To avoid getting added to any spam lists, I've included my email
-              address as an image below. If you prefer typing that in and
-              reaching out that way feel free! Otherwise, the form on the right
-              will achieve the same result.
+              address as an image below. If you'd like to type that in and reach
+              out that way feel free! Otherwise, the form here will achieve the
+              same result.
             </p>
             <div className="email-image">hello@allaboatesgoudreau.com</div>
             <div className="contact-socials">

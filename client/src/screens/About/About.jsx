@@ -10,28 +10,21 @@ const About = () => {
           <div className="about-header-left">
             <h2 className="about title">About Me</h2>
             <p className="about-text">
-              They've coming in! Three marks at two ten. I'll take them myself!
-              Cover me! Yes, sir. I can't maneuver! Stay on target. We're too
-              close. Stay on target! Loosen up! Gold Five to Red Leader... Lost
-              Tiree, lost Dutch. I copy, Gold Five. They came from behind....
-              We've analyzed their attack, sir, and there is a danger. Should I
-              have your ship standing by? Evacuate? In out moment of triumph? I
-              think you overestimate their chances! Rebel base, three minutes
-              and closing. Red Group, this is Red Leader.
+              Hi! I'm Katie. I am a Full Stack Web Developer + Software
+              Engineer, fitness enthusiast and Star Wars fan. My passion for
+              learning in my lifetime has taken across the galaxy from physics,
+              to special effects make-up, to med school preparation (I actually
+              loved organic chemistry), to natural products retail. I am most
+              fulfilled by learning new skills and knowledge, and above all:
+              problem solving.
             </p>
             <p className="about-text">
-              No, my father didn't fight in the wars. He was a navigator on a
-              spice freighter. That's what your uncle told you. He didn't hold
-              with your father's ideals. Thought he should have stayed here and
-              not gotten involved. You fought in the Clone Wars? Yes, I was once
-              a Jedi Knight the same as your father. I wish I'd known him. He
-              was the best star-pilot in the galaxy, and a cunning warrior. I
-              understand you've become quite a good pilot yourself. And he was a
-              good friend. Which reminds me... I have something here for you.
-              Your father wanted you to have this when you were old enough, but
-              your uncle wouldn't allow it. He feared you might follow old
-              Obi-Wan on some damned-fool idealistic crusade like your father
-              did.
+              Software Engineering gives me infinite opportunities to learn,
+              grow and problem solve, and I'm having lots of fun doing it! When
+              I'm not deep in code I love to explore outdoor activities such as
+              paddleboarding, bike riding, and snowboarding. I also enjoy
+              reading fiction, rooting for my Boston sports teams, and great
+              glass of wine.
             </p>
           </div>
           <div className="about-header-right">
