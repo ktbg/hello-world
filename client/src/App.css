@@ -19,6 +19,14 @@
   line-height: 90px;
 }
 
+.Toastify_toast-theme--dark {
+  color: #d8669e;
+}
+
+.Toastify_toast-theme--colored.Toastify__toast--error {
+  color: #d8669e;
+}
+
 @media screen and (max-width: 1024px) {
   .page-max {
     max-width: 100%;

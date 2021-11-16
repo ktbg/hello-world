@@ -1,16 +1,7 @@
 header.contact-header {
   text-align: left;
-  margin-top: 65px;
-  display: flex;
-  align-items: flex-end;
+  margin: 65px 0 20px 0;
   width: 85%;
-}
-
-.email-success {
-  font-weight: 700;
-  color: #d8669e;
-  width: 429px;
-  margin-right: 145px;
 }
 
 .contact {
@@ -44,11 +35,13 @@ header.contact-header {
 
 .email-image {
   height: 50px;
+  /* margin-top: 20px; */
   font-size: 24px;
   font-weight: bold;
 }
 
 .social-helper {
+  /* margin-top: 20px; */
   text-transform: uppercase;
   color: #bdc0c7;
   font-size: 12px;
@@ -59,7 +52,7 @@ header.contact-header {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
-  width: 100px;
+  width: 150px;
 }
 
 .social-link:hover {
@@ -77,6 +70,11 @@ header.contact-header {
   padding-left: 10%;
 }
 
+.custom-toast {
+  /* background-color: #d8669e;
+  font-weight: 700; */
+}
+
 input {
   margin: 10px 0;
   height: 40px;
@@ -92,6 +90,7 @@ textarea {
   padding: 12px 0 0 16px;
   font-family: "Inter", sans-serif;
   border: 1px solid #bdc0c7;
+  width: 349px;
 }
 
 .send-btn {
@@ -111,18 +110,8 @@ textarea {
   cursor: pointer;
 }
 
-.recaptcha-box {
-  margin-top: 20px;
-}
-
 @media screen and (max-width: 1000px) {
   .contact-container {
-    /* width: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 40px 0 120px 0;
-    text-align: left; */
     width: 85%;
     flex-direction: column;
   }
@@ -132,5 +121,15 @@ textarea {
 
   .contact-form {
     padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-left {
+    height: 400px;
+  }
+
+  .contact-form {
+    margin-top: 20px;
   }
 }

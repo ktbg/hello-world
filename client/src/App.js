@@ -7,11 +7,22 @@ import Projects from "./screens/Projects/Projects";
 import Layout from "./layouts/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
       <ScrollToTop />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={true}
+        closeOnClick
+        rtl={false}
+        draggable
+        theme="dark"
+      />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
