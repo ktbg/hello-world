@@ -18,7 +18,7 @@ const Navbar = () => {
       </NavLink>
       <a
         className="nav-link-right"
-        href="https://drive.google.com/file/d/1m0lnQtUyJQmLbhq6BBMjZ3M1wFiF0CtV/view?usp=sharing"
+        href="https://drive.google.com/file/d/1sx3WLnzPuXSVRsCxC_BnAWqLWUysiTWA/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
