@@ -10,29 +10,29 @@ const About = () => {
           <div className="about-header-left">
             <h2 className="about title">About Me</h2>
             <p className="about-text">
-              Hi! I’m Katie and I am a Full Stack Software Developer and
-              Software Engineer, fitness enthusiast and book lover. My thirst
-              for learning new skills and knowledge in my life so far has taken
-              me from physics, to special effects make-up, to natural products
-              retail. Moving from a store level position to a regional
-              leadership position in Whole Foods Market, I had a list of things
-              I wanted to learn about the systems and processes to improve, and
-              started immediately. Turns out that list kept going and it kept me
-              going. I felt fulfilled listening to questions and problems, then
-              digging into the workings of company systems and processes to find
-              solutions. Creating robust, easy to understand, and efficient
-              programs gave me deep satisfaction, so much so that I began to
-              look into a career that would offer infinite opportunities for
-              learning, creating, and problem solving: Software Engineering.
+              Hi! I’m Katie and I am a Full Stack Software Developer + Software
+              Engineer, fitness enthusiast and book lover. My entire life I have
+              had a thirst for knowledge. It’s the reason my career journey has
+              taken me from physics, to special effects make-up, to pre-med
+              courses, to natural products retail – all in a quest to learn new
+              skills and follow my passions. Through this entire journey, one
+              thing has always been consistent; I have always felt most
+              fulfilled engineering solutions to problems and improving
+              experiences for others. In my most recent leadership role within
+              product acquisition for Whole Foods Market, I had the opportunity
+              to dig even deeper into the workings of company systems to create
+              robust and easy to understand programs for vendors and consumers.
+              This experience led me to Software Engineering – a career that
+              feels like home, where there are infinite opportunities for
+              listening, learning, creating and problem solving.
             </p>
             <p className="about-text">
-              Software Engineering is now my home and I am inspired by my work
-              and my colleagues on a daily basis. When I’m not deep in code or
-              attempting to make the Kessel run in less than 12 parsecs, I love
-              to explore outdoor activities such as paddleboarding, bike riding,
-              and snowboarding. You may also find me reading a great piece of
-              fiction, rooting for my Boston sports teams or enjoying a great
-              glass of wine.
+              I am inspired by my work and my colleagues on a daily basis. When
+              I’m not deep in code or attempting to make the Kessel run in less
+              than 12 parsecs, I love exploring outdoor activities such as
+              Paddleboarding, bike riding, and snowboarding. You may also find
+              me consumed by a great piece of fiction, rooting for my Boston
+              sports teams or enjoying an exceptional glass of wine.
             </p>
           </div>
           <div className="about-header-right">
