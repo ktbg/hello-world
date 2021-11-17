@@ -8,7 +8,9 @@ const Footer = () => {
       <footer className="footer page-max">
         <div className="footer-left">
           <h5 className="footer-name">Katie Boates-Goudreau</h5>
-          <p className="footer-email">hello@allaboatesgoudreau.com</p>
+          <Link to="contact">
+            <div className="footer-email"></div>
+          </Link>
         </div>
         <div className="footer-right">
           <div className="footer-socials">
