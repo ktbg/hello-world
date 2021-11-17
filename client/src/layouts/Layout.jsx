@@ -4,6 +4,10 @@ import Footer from "../components/Footer/Footer";
 import "./Layout.css";
 
 const Layout = (props) => {
+  console.log(
+    "************************************************* \n\nChecking out my console, huh?\n\nWelcome! While you're at it check out my resume :)\n\nhttps://drive.google.com/file/d/1m0lnQtUyJQmLbhq6BBMjZ3M1wFiF0CtV/view?usp=sharing\n\n*************************************************  "
+  );
+
   return (
     <div className="layout">
       <Navbar />

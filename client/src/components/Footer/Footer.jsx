@@ -24,14 +24,7 @@ const Footer = () => {
               &hearts; by Katie Boates-Goudreau
             </p>
           </div>
-          <div className="licenses">
-            {/* <Link className="license-link footer-left-link" to="#"> DUCHESS
-              Cookie Policy
-            </Link>
-            <Link className="license-link footer-right-link" to="#">
-              Unsplash
-            </Link> */}
-          </div>
+          <div className="licenses"></div>
         </div>
       </footer>
     </div>

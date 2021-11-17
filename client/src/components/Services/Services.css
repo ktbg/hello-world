@@ -12,11 +12,27 @@
 }
 
 .services-list {
-  margin: 38px 0 34px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 38px 0 38px 0;
   font-weight: 400;
-  line-height: 29px;
+  max-width: 700px;
+  height: auto;
   letter-spacing: 0.02em;
   color: #cacdd4;
+}
+
+.tech-service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 106px;
+  margin: 20px 5px;
+}
+
+.tech-stack-img {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 526px) {
