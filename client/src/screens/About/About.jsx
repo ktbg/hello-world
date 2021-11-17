@@ -30,7 +30,7 @@ const About = () => {
               I am inspired by my work and my colleagues on a daily basis. When
               I’m not deep in code or attempting to make the Kessel run in less
               than 12 parsecs, I love exploring outdoor activities such as
-              Paddleboarding, bike riding, and snowboarding. You may also find
+              paddleboarding, bike riding, and snowboarding. You may also find
               me consumed by a great piece of fiction, rooting for my Boston
               sports teams or enjoying an exceptional glass of wine.
             </p>
