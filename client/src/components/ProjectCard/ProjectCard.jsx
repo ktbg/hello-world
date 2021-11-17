@@ -26,6 +26,8 @@ const ProjectCard = () => {
                   <a
                     className="redirect-pink project-link"
                     href={project.gitHub}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     github
                   </a>
@@ -33,6 +35,8 @@ const ProjectCard = () => {
                   <a
                     className="redirect-pink project-link"
                     href={project.deployUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Live demo
                   </a>

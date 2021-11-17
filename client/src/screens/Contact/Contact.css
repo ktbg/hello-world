@@ -35,13 +35,15 @@ header.contact-header {
 
 .email-image {
   height: 50px;
-  /* margin-top: 20px; */
+  max-width: 80%;
+  background-image: url("../../assets/hello@allaboatesgoudreau.com.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   font-size: 24px;
   font-weight: bold;
 }
 
 .social-helper {
-  /* margin-top: 20px; */
   text-transform: uppercase;
   color: #bdc0c7;
   font-size: 12px;
@@ -70,11 +72,6 @@ header.contact-header {
   padding-left: 10%;
 }
 
-.custom-toast {
-  /* background-color: #d8669e;
-  font-weight: 700; */
-}
-
 input {
   margin: 10px 0;
   height: 40px;
@@ -91,6 +88,7 @@ textarea {
   font-family: "Inter", sans-serif;
   border: 1px solid #bdc0c7;
   width: 349px;
+  resize: none;
 }
 
 .send-btn {

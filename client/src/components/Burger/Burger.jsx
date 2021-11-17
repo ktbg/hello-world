@@ -25,7 +25,7 @@ const Burger = ({ open, setOpen, Menu, width }) => {
       </div>
       <CSSTransition
         in={open}
-        timeout={500}
+        timeout={300}
         classNames="menu"
         unmountOnExit
         nodeRef={nodeRef}

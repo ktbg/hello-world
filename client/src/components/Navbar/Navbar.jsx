@@ -19,7 +19,7 @@ const Navbar = () => {
       <a
         className="nav-link-right"
         href="https://drive.google.com/file/d/1Z5_EBxfXrFRQ4D-HuIvkSxdVqJF1YVJt/view?usp=sharing"
-        to="_blank"
+        target="_blank"
         rel="noopener noreferrer"
       >
         Resume
@@ -31,7 +31,10 @@ const Navbar = () => {
   );
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
+    const handleWindowResize = () => {
+      setWidth(window.innerWidth);
+      setOpen(false);
+    };
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);

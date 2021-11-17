@@ -16,9 +16,9 @@ const Home = () => {
             <h2 className="title">Software</h2>
             <h2 className="title">Developer</h2>
             <p className="brand-statement">
-              Passionate about learning and deeply fulfilled by acquiring new
-              skills and knowledge, problem solving, and building amazing things
-              with amazing people.
+              Passionate about learning and solving problems, like creating
+              clearly marked emergency stops for all trash compactors on the
+              detention level.
             </p>
             <PinkLink linkName="let's talk" linkTo="contact" />
           </div>

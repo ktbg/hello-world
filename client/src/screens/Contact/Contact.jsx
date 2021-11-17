@@ -96,7 +96,7 @@ const Contact = () => {
               out that way feel free! Otherwise, the form here will achieve the
               same result.
             </p>
-            <div className="email-image">hello@allaboatesgoudreau.com</div>
+            <div className="email-image"></div>
             <div className="contact-socials">
               <p className="social-helper">Find me on the socials</p>
               <div className="social-logos">
