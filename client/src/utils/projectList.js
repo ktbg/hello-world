@@ -15,7 +15,7 @@ export const projectList = [
     deployUrl: "https://tasq.netlify.app/",
     gitHub: "https://github.com/ktbg/tasq",
     description:
-      "TASQ is a to do list application using a relational database built using Airtable with a React front end that allows users to create and manage lists.",
+      "TASQ is a to do list application employing a relational database built using Airtable with a React front end. TASQ enables users to create, edit and manage lists.",
   },
   {
     title: "EVNTZ",
@@ -24,7 +24,7 @@ export const projectList = [
     deployUrl: "https://suspicious-shirley-aff7c1.netlify.app/",
     gitHub: "https://github.com/erik-eyler/EVNTZ",
     description:
-      "EVNTZ is a full stack web application built as a team project. The goal is to connect members of the fictitious Newcastle, NJ through community events. Full user authentication allows registered user to create and modify events for their community.",
+      "EVNTZ is a full stack web application built as a team project. The goal is to connect members of the fictitious Newcastle, NJ through community events. Full user authentication allows registered users to create and modify events for their community.",
   },
 
   {

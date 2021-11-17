@@ -44,7 +44,7 @@ const Contact = () => {
       const token = await reRef.current.executeAsync();
       reRef.current.reset(); // resets token for next verification
 
-      const res = await toast.promise(
+      await toast.promise(
         sendMail({
           email: formData.email,
           subject: formData.subject,
@@ -57,7 +57,6 @@ const Contact = () => {
           error: "Something went wrong, please try again.",
         }
       );
-      console.log(res);
       setFormData({
         email: "",
         subject: "",

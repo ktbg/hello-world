@@ -39,6 +39,7 @@ img.project-img {
 
 .project-description-container {
   margin: 20px 0 10px 0;
+  min-height: 90px;
 }
 
 .project-description {
