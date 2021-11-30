@@ -10,13 +10,13 @@ In my previous life I graduated with a degree in Physics, graduated from special
 
 ### Recent Projects
 
-[Connoisseur](https://github.com/ktbg/connoisseur) - an application rendering public works of art from the Metropolitan Museum of Art API
+- [Connoisseur](https://github.com/ktbg/connoisseur) - an application rendering public works of art from the Metropolitan Museum of Art API
 
-[Tasq](https://github.com/ktbg/tasq) - a to do list application using the Airtable API and a custom database
+- [Tasq](https://github.com/ktbg/tasq) - a to do list application using the Airtable API and a custom database
 
-[EVNTZ](https://github.com/erik-eyler/EVNTZ) - a web application to connect the residents of the fictional town of Newcastle, NJ to community events and volunteer opportunities
+- [EVNTZ](https://github.com/erik-eyler/EVNTZ) - a web application to connect the residents of the fictional town of Newcastle, NJ to community events and volunteer opportunities
 
-[Grocery Express](https://github.com/ktbg/grocery-express) - an online marketplace for user to view and rate foods
+- [Grocery Express](https://github.com/ktbg/grocery-express) - an online marketplace for user to view and rate foods
 
 <hr>
 
