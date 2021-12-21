@@ -1,4 +1,3 @@
-// import axios from "axios";
 import api from "./apiConfig";
 
 export const sendMail = async (formData) => {

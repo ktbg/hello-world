@@ -6,11 +6,14 @@ import nodemailer from "nodemailer";
 import {} from "dotenv/config";
 
 const PORT = process.env.PORT || 3000;
+const corsOptions = {
+  origin: "https://www.allaboatesgoudreau.com ",
+  optionsSuccessStatus: 200,
+};
 
 const app = express();
 app.use(express.json());
 app.use(logger("dev"));
-app.use(cors());
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
@@ -46,7 +49,7 @@ const transporter = nodemailer.createTransport({
 
 // route to send mail, called from client/services/index.js
 
-app.post("/send", async function (req, res) {
+app.post("/send", cors(corsOptions), async function (req, res) {
   // checks reCaptcha verification
   const human = await validateHuman(req.body.captcha);
   if (!human) {

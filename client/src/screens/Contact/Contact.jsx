@@ -35,6 +35,18 @@ const Contact = () => {
     toast.error("Please fill out all fields before sending message, thanks!");
   };
 
+  const handleValidation = () => {
+    if (
+      formData.subject === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!handleValidation()) {
@@ -64,22 +76,6 @@ const Contact = () => {
       });
     }
   };
-
-  // ---------- validate inputs ------------------------------------
-
-  const handleValidation = () => {
-    if (
-      formData.subject === "" ||
-      formData.email === "" ||
-      formData.message === ""
-    ) {
-      return false;
-    } else {
-      return true;
-    }
-  };
-
-  // ---------- setTimeout function for success message -------------
 
   return (
     <div className="page-max">
