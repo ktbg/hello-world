@@ -3,7 +3,9 @@ import express from "express";
 import logger from "morgan";
 import cors from "cors";
 import nodemailer from "nodemailer";
-import {} from "dotenv/config";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
