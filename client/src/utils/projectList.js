@@ -2,7 +2,8 @@ export const projectList = [
   {
     title: "Grocery Express",
     techStack: ["React", "Ruby on Rails", "PostgreSQL"],
-    imgUrl: "grocery-express.png",
+    imgUrl:
+      "https://res.cloudinary.com/dszflj9df/image/upload/v1638376856/thumbnails/grocery-express_daa1qs.png",
     deployUrl: "https://grocery-express.netlify.app/",
     gitHub: "https://github.com/ktbg/grocery-express",
     description:
@@ -11,7 +12,8 @@ export const projectList = [
   {
     title: "TASQ",
     techStack: ["React", "Tailwindcss"],
-    imgUrl: "tasq.png",
+    imgUrl:
+      "https://res.cloudinary.com/dszflj9df/image/upload/v1638376861/thumbnails/tasq_r3wtix.png",
     deployUrl: "https://tasq.netlify.app/",
     gitHub: "https://github.com/ktbg/tasq",
     description:
@@ -20,7 +22,8 @@ export const projectList = [
   {
     title: "EVNTZ",
     techStack: ["React", "Express", "Node.js", "MongoDB", "bcrypt", "JWT"],
-    imgUrl: "evntz.png",
+    imgUrl:
+      "https://res.cloudinary.com/dszflj9df/image/upload/v1638376854/thumbnails/evntz_vruhiw.png",
     deployUrl: "https://suspicious-shirley-aff7c1.netlify.app/",
     gitHub: "https://github.com/erik-eyler/EVNTZ",
     description:
@@ -30,7 +33,8 @@ export const projectList = [
   {
     title: "Connoisseur",
     techStack: ["HTML", "CSS", "JavaScript"],
-    imgUrl: "connoisseur.png",
+    imgUrl:
+      "https://res.cloudinary.com/dszflj9df/image/upload/v1638376851/thumbnails/connoisseur_xktktu.png",
     deployUrl: "https://ktbg.github.io/connoisseur/",
     gitHub: "https://github.com/ktbg/connoisseur",
     description:

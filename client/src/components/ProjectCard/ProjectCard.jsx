@@ -12,10 +12,7 @@ const ProjectCard = () => {
             <div className="project-img-container">
               <img
                 className="project-img"
-                src={
-                  require(`../../assets/project-images/${project.imgUrl}`)
-                    .default
-                }
+                src={`${project.imgUrl}`}
                 alt={project.title}
               />
             </div>
