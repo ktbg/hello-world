@@ -22,5 +22,5 @@ In my previous life I graduated with a degree in Physics, graduated from special
 
 #### Contact Me
 
-- [Resume](https://drive.google.com/file/d/1sx3WLnzPuXSVRsCxC_BnAWqLWUysiTWA/view?usp=sharing)
+- [Resume](https://drive.google.com/file/d/1rifByLkJPOOkMS9naQbVPC2nvvC5bOgC/view?usp=sharing)
 - [LinkedIn](https://www.linkedin.com/in/katherine-boates-goudreau/)
