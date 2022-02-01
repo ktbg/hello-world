@@ -5,7 +5,7 @@ import "./Layout.css";
 
 const Layout = (props) => {
   console.log(
-    "************************************************* \n\nChecking out my console, huh?\n\nWelcome! While you're at it check out my resume :)\n\nhttps://drive.google.com/file/d/1sx3WLnzPuXSVRsCxC_BnAWqLWUysiTWA/view?usp=sharing\n\n*************************************************  "
+    "***************************************** \n\nChecking out my console, huh?\n\nWelcome! While you're at it check out my resume :)\n\nhttps://drive.google.com/file/d/1rifByLkJPOOkMS9naQbVPC2nvvC5bOgC/view?usp=sharing\n\n*****************************************  "
   );
 
   return (
