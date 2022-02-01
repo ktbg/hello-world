@@ -36,9 +36,9 @@ const Home = () => {
               From physics, to special effects make-up, to natural products
               retail, my passion for learning, creating and creative problem
               solving has driven and inspired me. I am now a Software Developer
-              looking to use my dynamic background collaborating with clients
-              and teams across industries to create effective solutions and
-              drive innovation to make lives better.
+              using my dynamic background collaborating with clients and teams
+              across industries to create effective solutions and drive
+              innovation to make lives better.
             </p>
             <div className="more-about">
               <PinkLink

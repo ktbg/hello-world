@@ -19,7 +19,7 @@ const Contact = () => {
   const reRef = useRef();
   const { REACT_APP_SITE_KEY } = process.env;
 
-  // ------------ handle input change, store in formData variable --------------
+  // ----------------- handle input change --------------
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -54,7 +54,7 @@ const Contact = () => {
       return;
     } else {
       const token = await reRef.current.executeAsync();
-      reRef.current.reset(); // resets token for next verification
+      reRef.current.reset();
 
       await toast.promise(
         sendMail({
@@ -73,6 +73,7 @@ const Contact = () => {
         email: "",
         subject: "",
         message: "",
+        token: "",
       });
     }
   };
@@ -126,7 +127,7 @@ const Contact = () => {
             <div className="contact-form-container">
               <form
                 className="contact-form"
-                onSubmit={handleSubmit}
+                onSubmit={(e) => handleSubmit(e)}
                 method="POST"
               >
                 <label name="email">
@@ -164,11 +165,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </label>
-                <button
-                  type="submit"
-                  className="send-btn"
-                  onClick={(e) => handleSubmit(e)}
-                >
+                <button type="submit" className="send-btn">
                   Send Message <Send />
                 </button>
                 <div className="recaptcha-box">

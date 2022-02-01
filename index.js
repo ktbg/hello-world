@@ -49,17 +49,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// route to send mail, called from client/services/index.js
-
 app.post("/send", cors(corsOptions), async function (req, res) {
-  // checks reCaptcha verification
   const human = await validateHuman(req.body.captcha);
   if (!human) {
     res.status(400);
     res.json({ errors: ["Not today bot!"] });
     return;
   }
-  // my default email format for any contact form request that comes through
+
   let mailOptions = {
     from: "hello@allaboatesgoudreau.com",
     to: "hello@allaboatesgoudreau.com",
@@ -70,7 +67,6 @@ app.post("/send", cors(corsOptions), async function (req, res) {
           <p>Message: ${req.body.message}</p>`,
   };
 
-  // nodemailer sendMail function
   transporter.sendMail(mailOptions, function (err, info) {
     if (err) {
       console.log(err);
@@ -81,12 +77,11 @@ app.post("/send", cors(corsOptions), async function (req, res) {
   });
 });
 
-// nodemailer verify function for testing
-
+// nodemailer verify function for testing transporter connection on server start
 transporter.verify(function (error, success) {
   if (error) {
     console.log(error);
   } else {
-    console.log(success);
+    console.log("transporter.verify", success);
   }
 });

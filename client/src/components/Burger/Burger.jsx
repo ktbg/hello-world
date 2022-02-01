@@ -55,7 +55,7 @@ const Burger = ({ open, setOpen, Menu, width }) => {
             </NavLink>
             <a
               className="nav-link-right"
-              href="https://drive.google.com/file/d/1eXZo7UsUuRX06lKz9frM8c7j5q0EGuS_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rifByLkJPOOkMS9naQbVPC2nvvC5bOgC/view?usp=sharing"
               to="_blank"
               rel="noopener noreferrer"
               onClick={handleMenuClose}

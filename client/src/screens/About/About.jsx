@@ -18,13 +18,10 @@ const About = () => {
               skills and follow my passions. Through this entire journey, one
               thing has always been consistent; I have always felt most
               fulfilled engineering solutions to problems and improving
-              experiences for others. In my most recent leadership role within
-              product acquisition for Whole Foods Market, I had the opportunity
-              to dig even deeper into the workings of company systems to create
-              robust and easy to understand programs for vendors and consumers.
-              This experience led me to Software Engineering – a career that
-              feels like home, where there are infinite opportunities for
-              listening, learning, creating and problem solving.
+              experiences for others. This experience led me to Software
+              Engineering – a career that feels like home, where there are
+              infinite opportunities for listening, learning, creating and
+              problem solving.
             </p>
             <p className="about-text">
               I am inspired by my work and my colleagues on a daily basis. When
