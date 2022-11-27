@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="dark">
       <footer className="footer page-max">
@@ -20,8 +21,8 @@ const Footer = () => {
           </div>
           <div className="copyright">
             <p className="copyright-text">
-              Katie Boates-Goudreau &copy;2021. All rights reserved. Made with
-              &hearts; by Katie Boates-Goudreau
+              Katie Boates-Goudreau &copy;{currentYear}. All rights reserved.
+              Made with &hearts; by Katie Boates-Goudreau
             </p>
           </div>
           <div className="licenses"></div>

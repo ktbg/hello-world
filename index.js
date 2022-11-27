@@ -3,14 +3,19 @@ import express from "express";
 import logger from "morgan";
 import cors from "cors";
 import nodemailer from "nodemailer";
-import {} from "dotenv/config";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
+const corsOptions = {
+  origin: "https://www.allaboatesgoudreau.com ",
+  optionsSuccessStatus: 200,
+};
 
 const app = express();
 app.use(express.json());
 app.use(logger("dev"));
-app.use(cors());
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
@@ -44,17 +49,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// route to send mail, called from client/services/index.js
-
-app.post("/send", async function (req, res) {
-  // checks reCaptcha verification
+app.post("/send", cors(corsOptions), async function (req, res) {
   const human = await validateHuman(req.body.captcha);
   if (!human) {
     res.status(400);
     res.json({ errors: ["Not today bot!"] });
     return;
   }
-  // my default email format for any contact form request that comes through
+
   let mailOptions = {
     from: "hello@allaboatesgoudreau.com",
     to: "hello@allaboatesgoudreau.com",
@@ -65,7 +67,6 @@ app.post("/send", async function (req, res) {
           <p>Message: ${req.body.message}</p>`,
   };
 
-  // nodemailer sendMail function
   transporter.sendMail(mailOptions, function (err, info) {
     if (err) {
       console.log(err);
@@ -76,12 +77,11 @@ app.post("/send", async function (req, res) {
   });
 });
 
-// nodemailer verify function for testing
-
+// nodemailer verify function for testing transporter connection on server start
 transporter.verify(function (error, success) {
   if (error) {
     console.log(error);
   } else {
-    console.log(success);
+    console.log("transporter.verify", success);
   }
 });

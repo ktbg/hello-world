@@ -19,7 +19,7 @@ const Contact = () => {
   const reRef = useRef();
   const { REACT_APP_SITE_KEY } = process.env;
 
-  // ------------ handle input change, store in formData variable --------------
+  // ----------------- handle input change --------------
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,6 +35,18 @@ const Contact = () => {
     toast.error("Please fill out all fields before sending message, thanks!");
   };
 
+  const handleValidation = () => {
+    if (
+      formData.subject === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!handleValidation()) {
@@ -42,7 +54,7 @@ const Contact = () => {
       return;
     } else {
       const token = await reRef.current.executeAsync();
-      reRef.current.reset(); // resets token for next verification
+      reRef.current.reset();
 
       await toast.promise(
         sendMail({
@@ -61,25 +73,10 @@ const Contact = () => {
         email: "",
         subject: "",
         message: "",
+        token: "",
       });
     }
   };
-
-  // ---------- validate inputs ------------------------------------
-
-  const handleValidation = () => {
-    if (
-      formData.subject === "" ||
-      formData.email === "" ||
-      formData.message === ""
-    ) {
-      return false;
-    } else {
-      return true;
-    }
-  };
-
-  // ---------- setTimeout function for success message -------------
 
   return (
     <div className="page-max">
@@ -130,7 +127,7 @@ const Contact = () => {
             <div className="contact-form-container">
               <form
                 className="contact-form"
-                onSubmit={handleSubmit}
+                onSubmit={(e) => handleSubmit(e)}
                 method="POST"
               >
                 <label name="email">
@@ -168,11 +165,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </label>
-                <button
-                  type="submit"
-                  className="send-btn"
-                  onClick={(e) => handleSubmit(e)}
-                >
+                <button type="submit" className="send-btn">
                   Send Message <Send />
                 </button>
                 <div className="recaptcha-box">
