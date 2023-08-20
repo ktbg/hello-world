@@ -48,7 +48,7 @@ const transporter = nodemailer.createTransport({
     ciphers: "SSLv3",
   },
 });
-
+app.options("/send", cors());
 app.post("/send", cors(corsOptions), async function (req, res) {
   const human = await validateHuman(req.body.captcha);
   if (!human) {
