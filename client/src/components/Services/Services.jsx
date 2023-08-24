@@ -58,14 +58,14 @@ const Services = ({ linkName, linkTo }) => {
               <p>GraphQL</p>
             </div>
             {/* typeScript goes here */}
-            {/* <div className="tech-service-container">
+            <div className="tech-service-container">
               <img
                 className="tech-stack-img"
-                src={require("../../assets/tech-stack/.svg").default}
-                alt="Ruby on Rails"
+                src={require("../../assets/tech-stack/Typescript.svg").default}
+                alt="Typescript"
               />
-              <p>Ruby on Rails</p>
-            </div> */}
+              <p>TypeScript</p>
+            </div>
             <div className="tech-service-container">
               <img
                 className="tech-stack-img"
