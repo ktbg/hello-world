@@ -3,6 +3,7 @@ import "./Burger.css";
 import { CSSTransition } from "react-transition-group";
 import { useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { RESUME_URL } from "../../constants/resume";
 
 // burger menu idea from: https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
 const Burger = ({ open, setOpen, Menu, width }) => {
@@ -55,7 +56,7 @@ const Burger = ({ open, setOpen, Menu, width }) => {
             </NavLink>
             <a
               className="nav-link-right"
-              href="https://drive.google.com/file/d/1rifByLkJPOOkMS9naQbVPC2nvvC5bOgC/view?usp=sharing"
+              href={RESUME_URL}
               to="_blank"
               rel="noopener noreferrer"
               onClick={handleMenuClose}

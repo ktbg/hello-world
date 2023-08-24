@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Burger from "../Burger/Burger";
+import { RESUME_URL } from "../../constants/resume";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
       </NavLink>
       <a
         className="nav-link-right"
-        href="https://drive.google.com/file/d/14hE3glTCAKsYMz2wZZRF0wb4lQotquGD/view?usp=sharing"
+        href={RESUME_URL}
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -52,19 +52,20 @@ const Services = ({ linkName, linkTo }) => {
             <div className="tech-service-container">
               <img
                 className="tech-stack-img"
-                src={require("../../assets/tech-stack/Ruby.svg").default}
-                alt="Ruby"
+                src={require("../../assets/tech-stack/GraphQL.svg").default}
+                alt="GraphQL"
               />
-              <p>Ruby</p>
+              <p>GraphQL</p>
             </div>
-            <div className="tech-service-container">
+            {/* typeScript goes here */}
+            {/* <div className="tech-service-container">
               <img
                 className="tech-stack-img"
-                src={require("../../assets/tech-stack/rails.svg").default}
+                src={require("../../assets/tech-stack/.svg").default}
                 alt="Ruby on Rails"
               />
               <p>Ruby on Rails</p>
-            </div>
+            </div> */}
             <div className="tech-service-container">
               <img
                 className="tech-stack-img"
@@ -88,6 +89,22 @@ const Services = ({ linkName, linkTo }) => {
                 alt="Express"
               />
               <p>Express</p>
+            </div>
+            <div className="tech-service-container">
+              <img
+                className="tech-stack-img"
+                src={require("../../assets/tech-stack/Ruby.svg").default}
+                alt="Ruby"
+              />
+              <p>Ruby</p>
+            </div>
+            <div className="tech-service-container">
+              <img
+                className="tech-stack-img"
+                src={require("../../assets/tech-stack/rails.svg").default}
+                alt="Ruby on Rails"
+              />
+              <p>Ruby on Rails</p>
             </div>
             <div className="tech-service-container">
               <img
