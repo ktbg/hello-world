@@ -12,7 +12,7 @@
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.0",
     "@testing-library/user-event": "^14.5.1",
-    "axios": "^0.24.0",
+    "axios": "^0.28.0",
     "immer": "^9.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
