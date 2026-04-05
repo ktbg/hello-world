@@ -9,8 +9,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-  // origin: "https://www.allaboatesgoudreau.com ",
-  origin: "http://localhost:3001",
+  origin: "https://www.allaboatesgoudreau.com ",
   optionsSuccessStatus: 200,
 };
 
