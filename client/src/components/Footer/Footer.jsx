@@ -15,9 +15,11 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="footer-socials">
-            <Link to="/">LinkedIn</Link>
-            <Link to="/">GitHub</Link>
-            <Link to="/">Instagram</Link>
+            <Link to="https://www.linkedin.com/in/katherine-boates-goudreau/">
+              LinkedIn
+            </Link>
+            <Link to="https://github.com/ktbg">GitHub</Link>
+            <Link to="https://www.instagram.com/metlgrl/">Instagram</Link>
           </div>
           <div className="copyright">
             <p className="copyright-text">
