@@ -20,16 +20,16 @@
   },
   "homepage": "https://github.com/ktbg/hello-world#readme",
   "dependencies": {
-    "axios": "^0.24.0",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
+    "axios": "1.14.0",
+    "cors": "2.8.6",
+    "dotenv": "17.4.0",
+    "express": "5.2.1",
+    "morgan": "1.10.1",
     "node-fetch": "^3.2.10",
-    "nodemailer": "^6.7.0"
+    "nodemailer": "8.0.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "3.1.14"
   },
   "type": "module"
 }
