@@ -28,7 +28,7 @@ async function validateHuman(token) {
     `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`,
     {
       method: "POST",
-    }
+    },
   );
   const data = await response.json();
   return data.success;
@@ -48,7 +48,7 @@ const transporter = nodemailer.createTransport({
     ciphers: "SSLv3",
   },
 });
-app.options("/send", cors());
+app.options("/send", cors(corsOptions));
 app.post("/send", cors(corsOptions), async function (req, res) {
   const human = await validateHuman(req.body.captcha);
   if (!human) {
